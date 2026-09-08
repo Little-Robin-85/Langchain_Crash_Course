@@ -54,7 +54,7 @@ model = init_chat_model(MODEL_NAME, model_provider="google_genai", temperature=0
 # 2. Executing the Stream
 # ------------------------------------------------------------------------------
 def main():
-    prompt = "Explain Python in three concise bullet points, highlighting why developers love it."
+    prompt = "Explain Python in 500 words, highlighting why AI seems to have adopted it as default."
     print(f"--- Prompt: '{prompt}' ---")
     print("--- Streaming Tokens (Watch text appear in real-time) ---\n")
 

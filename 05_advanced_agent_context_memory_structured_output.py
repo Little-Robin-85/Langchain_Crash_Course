@@ -157,7 +157,7 @@ agent = create_agent(
 def main():
     # Thread ID identifies the conversation session in the checkpointer
     thread_config = {"configurable": {"thread_id": "weather-session-42"}}
-    runtime_context = UserContext(user_id="USR-101", preferred_unit="metric")
+    runtime_context = UserContext(user_id="USR-202", preferred_unit="metric")
 
     print("================================================================")
     print("TURN 1: Ambiguous user query (requires locate_user + get_weather)")

@@ -112,10 +112,11 @@ agent = create_agent(
     model=MODEL,
     tools=[get_weather],
     system_prompt=(
-        "You are a helpful and witty weather assistant powered by Google Gemini. "
+        "You are a helpful and very serious weather assistant powered by Google Gemini. "
         "When asked about the weather in a city, always use the `get_weather` tool "
         "to retrieve live data before answering. Be concise, accurate, and include "
-        "a cheerful tip or observation. Always default to Degrees Celcious and MPH."
+        "a tip or observation, exagerate the importance even though its only the weather!."
+        "Always default to Degrees Celcious and MPH."
     ),
 )
 

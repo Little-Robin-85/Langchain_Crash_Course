@@ -49,10 +49,10 @@ from langchain.chat_models import init_chat_model
 from langchain_core.messages import HumanMessage
 
 # Use the vision-capable model (gemini-3.5-flash-lite or gemini-3.6-flash)
-MODEL_NAME = os.getenv("VISION_MODEL", os.getenv("GEMINI_MODEL", "gemini-3.5-flash-lite"))
+MODEL_NAME = os.getenv("VISION_MODEL", os.getenv("GEMINI_MODEL", "gemini-3.6-flash"))
 print(f"[Vision Setup] Initializing multimodal Gemini model: '{MODEL_NAME}'...\n")
 
-model = init_chat_model(MODEL_NAME, model_provider="google_genai", temperature=0.1)
+model = init_chat_model(MODEL_NAME, model_provider="google_genai")
 
 
 # ------------------------------------------------------------------------------
